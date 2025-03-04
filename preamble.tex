@@ -1,0 +1,81 @@
+%! ROOT=adventure.tex
+\usepackage{array}
+\usepackage{url}
+\usepackage{dirtytalk}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{xspace}
+
+\newcommand\bodhran{Bodhr\'{a}n\xspace}
+\newcommand{\pngname}[1]{\underline{\textit{\textsc{#1}}}}
+\newcommand{\npcname}[1]{\underline{\textit{\textsc{#1}}}}
+\newcommand{\tiro}[2]{tiro \textbf{#1} a difficolt\`{a} \textbf{#2}}
+
+\newmdenv[linecolor=red,backgroundcolor=yellow!25]{infobox}
+\newmdenv[linecolor=red,backgroundcolor=cyan!15]{dreambox}
+\newmdenv[linecolor=red,backgroundcolor=red!15]{monsterbox}
+
+\newcommand{\dvstat}[5]{
+\textbf{DV}: #1 \\
+\emph{1 DV}: #2 \\
+\emph{2 DV}: #3 \\
+\emph{3 DV}: #4 \\
+\emph{Punti Vita}: #5 \\
+}
+
+\newcommand{\equip}[2]{
+\emph{Armi}: #1 \\
+\emph{Armatura}: #2 \\
+}
+
+\newcommand{\specialstat}[2]{
+\emph{Abilit\`{a} Speciali}: #1 \\
+\emph{Poteri Magici}: #2 \\
+}
+
+\newcommand{\npc}[2]{
+\begin{infobox}
+\begin{center}
+\npcname{#1}
+\end{center}
+#2
+\end{infobox}
+}
+
+\newcommand{\monster}[2]{
+\begin{figure}[tb]
+\begin{monsterbox}
+\begin{center}
+\npcname{#1}
+\end{center}
+#2
+\end{monsterbox}
+\end{figure}
+}
+
+\newcommand{\dream}[2]{
+\begin{figure}[tb]
+\begin{dreambox}
+\begin{center}
+\textbf{SOGNO:\\
+\underline{#1}
+}
+\end{center}
+#2
+\end{dreambox}
+\end{figure}
+}
+
+\newcommand{\object}[2]{
+\begin{figure}[tb]
+\begin{infobox}
+\begin{center}
+\textsc{#1}
+\end{center}
+#2
+\end{infobox}
+\end{figure}
+}
+
