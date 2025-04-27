@@ -1,21 +1,94 @@
 %! ROOT=adventure.tex
+\usepackage[a4paper,hmargin=2cm,vmargin=2.5cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
 \usepackage{array}
 \usepackage{url}
+\usepackage[open,openlevel=3]{bookmark}
+\usepackage{comment}
 \usepackage{dirtytalk}
+\usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{lmodern}
 \usepackage{mdframed}
+\usepackage{todonotes}
 \usepackage{xcolor}
 \usepackage{xspace}
 
+\usepackage{titlesec}
+\renewcommand{\thepart}{Parte~\Roman{part}}
+\renewcommand{\thesection}{Scena~\Roman{section}}
+\titleformat{\part}[display]{\huge\bfseries}{\thepart}{5pt}{}
+\titleformat{\part}[display]{\huge\bfseries}{\thepart}{5pt}{}
+\titleformat{\section}[block]{\Large\bfseries}{\thesection}{5pt}{}
+
+\newcommand{\lapart}[1]{
+\phantomsection
+\part*{#1}
+%\addcontentsline{toc}{part}{#1} % not needed for unknown reasons
+}
+
+\newcommand{\lasection}[1]{
+\phantomsection
+\section*{#1}
+\addcontentsline{toc}{section}{#1}
+}
+
+\newcommand{\lasubsection}[1]{
+\phantomsection
+\subsection*{#1}
+\addcontentsline{toc}{subsection}{#1}
+}
+
+\makeatletter
+\def\RemoveSpaces#1{\zap@space#1 \@empty}
+\makeatother
+
+\newcommand{\objlabel}[1]{obj:\RemoveSpaces{#1}}
+\newcommand{\npclabel}[1]{npc:\RemoveSpaces{#1}}
+\newcommand{\monsterlabel}[1]{mon:\RemoveSpaces{#1}}
+\newcommand{\dreamlabel}[1]{dre:\RemoveSpaces{#1}}
+
 \newcommand\bodhran{Bodhr\'{a}n\xspace}
-\newcommand{\pngname}[1]{\underline{\textit{\textsc{#1}}}}
-\newcommand{\npcname}[1]{\underline{\textit{\textsc{#1}}}}
+\newcommand{\objname}[1]{\phantomsection\label{\objlabel{#1}}\textsc{#1}}
+\newcommand{\monstername}[1]{\phantomsection\label{\monsterlabel{#1}}\underline{\textit{\textsc{#1}}}}
+\newcommand{\pngname}[1]{\phantomsection\label{\npclabel{#1}}\underline{\textit{\textsc{#1}}}}
+\newcommand{\dreamname}[1]{\phantomsection\label{\dreamlabel{#1}}\textbf{SOGNO:\\\underline{#1}}}
+\newcommand{\npcname}[1]{\phantomsection\label{\npclabel{#1}}\underline{\textit{\textsc{#1}}}}
 \newcommand{\tiro}[2]{tiro \textbf{#1} a difficolt\`{a} \textbf{#2}}
+
+\newcommand{\objref}[1]{\hyperref[\objlabel{#1}]{#1}\xspace}
+\newcommand{\npcref}[1]{\hyperref[\npclabel{#1}]{#1}\xspace}
+\newcommand{\monsterref}[1]{\hyperref[\monsterlabel{#1}]{#1}\xspace}
+\newcommand{\dreamref}[1]{\hyperref[\dreamlabel{#1}]{#1}\xspace}
 
 \newmdenv[linecolor=red,backgroundcolor=yellow!25]{infobox}
 \newmdenv[linecolor=red,backgroundcolor=cyan!15]{dreambox}
 \newmdenv[linecolor=red,backgroundcolor=red!15]{monsterbox}
+
+\newcommand{\gradetable}[3]{
+\begin{tabular}{| m{.12\columnwidth} m{.77\columnwidth} |}
+\hline
+\textbf{Grado} & \textbf{Conoscenza} \\
+\hline
+I & {#1}\\
+\hline
+II & {#2}\\
+\hline
+III & {#3}\\
+\hline
+\end{tabular}
+}
+
+\newcommand{\gradetext}[3]{
+
+\emph{I grado di successo}:\\#1
+
+\emph{II grado di successo}:\\#2
+
+\emph{III grado di successo}:\\#3
+\smallskip
+}
 
 \newcommand{\dvstat}[5]{
 \textbf{DV}: #1 \\
@@ -39,16 +112,18 @@
 \begin{infobox}
 \begin{center}
 \npcname{#1}
+\addcontentsline{toc}{subsection}{#1}
 \end{center}
 #2
 \end{infobox}
 }
 
 \newcommand{\monster}[2]{
-\begin{figure}[tb]
+\begin{figure}[!tb]
 \begin{monsterbox}
 \begin{center}
-\npcname{#1}
+\monstername{#1}
+\addcontentsline{toc}{subsection}{#1}
 \end{center}
 #2
 \end{monsterbox}
@@ -56,12 +131,11 @@
 }
 
 \newcommand{\dream}[2]{
-\begin{figure}[tb]
+\begin{figure}[!tb]
 \begin{dreambox}
 \begin{center}
-\textbf{SOGNO:\\
-\underline{#1}
-}
+\dreamname{#1}
+\addcontentsline{toc}{subsection}{#1}
 \end{center}
 #2
 \end{dreambox}
@@ -69,10 +143,11 @@
 }
 
 \newcommand{\object}[2]{
-\begin{figure}[tb]
+\begin{figure}[!tb]
 \begin{infobox}
 \begin{center}
-\textsc{#1}
+\objname{#1}
+\addcontentsline{toc}{subsection}{#1}
 \end{center}
 #2
 \end{infobox}

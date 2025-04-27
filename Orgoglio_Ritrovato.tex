@@ -1,8 +1,16 @@
 \documentclass[11.5pt,twocolumn]{article}
 \setlength{\columnsep}{1cm}
-\usepackage[a4paper,hmargin=2cm,vmargin=2.5cm]{geometry}
 
 \input{preamble}
+
+\newcommand\cluas{Cluas a Geàrra}
+\newcommand\spog{Spòg Nan Sionnach}
+\newcommand\vate{Vate}
+\newcommand\governatore{Sextus Domitius Mircianus}
+\newcommand\minio{Minio Matholwch}
+\newcommand\pupius{Ellfin Pupius}
+\newcommand\musico{Il Musico Bicentenario}
+\newcommand\geordie{Georgius Mar Mathan}
 
 \begin{document}
 
@@ -14,7 +22,7 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Introduzione per i Giocatori}
+\lasection{Introduzione per i Giocatori}
 \`{E} un periodo di intensa attivit\`{a} arcana nella provincia di Britannia, e il governatore ha richiesto l'aiuto del vostro contubernium per verificare dei rapporti di strani fenomeni che giungono dal Vallo.
 Un susseguirsi irregolare di incendi, alluvioni, e smottamenti sta oltraggiando i lavori di rafforzamento ed espansione di un castrum.
 Dopo tre mesi di continue lamentele delle autorit\`{a} locali, il governatore ha interpellato gli dei tramite un augure.
@@ -23,7 +31,7 @@ Purtroppo l'augure non \`{e} pi\`{u} in Britannia, in quanto la sua presenza \`{
 Il governatore vi chiede di recarvi direttamente ad Eburacum, dove sarete istruiti sui fatti dalle autorit\`{a} locali.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Introduzione per il Demiurgo}
+\lasection{Introduzione per il Demiurgo}
 La Legio IX Hispana scomparve nell'anno 873 aUc (Ab Urbe Condita).
 Siamo nell'anno 1229 aUc.
 Ad oltre 350 anni dalla scomparsa della IX, dal nulla iniziano a riemergere indizi che potrebbero svelare la sorte della Legione perduta.
@@ -33,9 +41,9 @@ I custodes sono chiamati ad indagare su quello che si riveler\`{a} essere uno de
 Essi stessi potrebbero ritrovarsi coinvolti in uno scontro con potenze sovrannaturali, uno scontro rimasto in sospeso da pi\`{u} di tre secoli.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Sinossi}
+\lasection{Sinossi}
 
-\subsection*{Parte I -- Fiamme di Guerra}
+\lasubsection{Parte I -- Fiamme di Guerra}
 %
 Incendi inspiegabili devastano il sito in costruzione.
 Lungo la strada per Pons Aelius, i custodes incontrano diversi bardi ad ogni taverna, e occasionalmente dei non-morti nelle campagne.
@@ -43,13 +51,13 @@ Giunti in citt\`{a}, i custodes trovano danni sparsi dovuti a catastrofi apparen
 Nel villaggio, imperversano anche dispetti di un Br\`{u}neus, e un pericolo diplomatico dovuto ad un arresto illustre.
 Durante il sopralluogo dei custodes, nottetempo uno scirpex infuocato compare dal nulla e incendia alcuni edifici.
 
-\subsection*{Parte II -- Eco dal Passato}
+\lasubsection{Parte II -- Eco dal Passato}
 Il campo di battaglia restituisce alcuni corpi, alcuni ancora vivi.
 I resti dello scirpex rivelano legionari usati come sacrifici.
 Tra loro, compare anche l'effige di un'aquila: quella della Legio IX.
 Un misterioso personaggio venuto dal passato si offre di aiutare i custodes nella battaglia contro il culto di Balor.
 
-\subsection*{Parte III -- La Battaglia pi\`{u} Lunga}
+\lasubsection{Parte III -- La Battaglia pi\`{u} Lunga}
 Tafferugli con cultisti invasati rallentano il contubernium.
 Ispirati da un sogno, i custodes possono ottenere la benedizione delle divinit\`{a} locali del Vallo.
 La magia che trattiene i combattenti nel reame fatato collassa e i custodes sono catapultati in un mezzo ad una rivolta di proporzioni mai viste.
@@ -57,12 +65,12 @@ La battaglia \`{e} ancora in corso e la Legio IX ha bisogno di assistenza.
 Riusciranno i custodes a uscirne vittoriosi?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Valore indicativo}
+\lasection{Valore indicativo}
 Punti Esperienza: 8
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\clearpage
-\section*{Luoghi}
+\lasection{Luoghi}
 \begin{description}
 \item[Eburacum] Capoluogo della Britannia Quarta (o Ultima). Qui i custodes vengono convocati e aggiornati sui fatti dal governatore. \\Toponimo moderno: York.
 \item[Pons Aelius] Castrum sul limes settentrionale collegato al Vallo di Adriano. Qui i custodes vengono incaricati di raccogliere informazioni da testimoni diretti. \\Toponimo moderno: Newcastle Upon Tyne.
@@ -71,9 +79,9 @@ Punti Esperienza: 8
 \end{description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Personaggi}
+\lasection{Personaggi}
 %
-\npc{Sextus Domitius Mircianus}{
+\npc{\governatore}{
 \dvstat{8}
 {Sensibilitas}
 {De Bello, De Corpore, De Natura (Cavalcare), Ratio, Punti Vita}
@@ -91,7 +99,7 @@ In cuor suo, spera che il suo consigliere si sbagli, ma la posta in gioco \`{e} 
 Sa che ammettere di avere druidi al suo servizio porterebbe alla sua rimozione dall'incarico, nel migliore dei casi.
 }
 
-\vfill
+%\vfill
 
 \npc{Publius Aurelianus Constans}{
 \dvstat{8}
@@ -109,13 +117,13 @@ Maggiori informazioni sono disponibili a pagina 56 del manuale Britannia~\cite{b
 
 \eject
 
-\npc{Ellfin Pupius}{
+\npc{\pupius}{
 \dvstat{8}
 {De Bello, De Corpore}
 {Punti Vita, De Natura, De Scientia}
 {De Societate, De Magia (Disciplina Druidiica)}
 {16}
-Assistente e consigliere personale di Sextus Domitius Mircianus.
+Assistente e consigliere personale di \npcref{\governatore}.
 Nativo della Britannia Quarta, \`{e} considerato un ``nuovo romano''.
 Il suo status sociale dipende dal governatore, ed a lui \`{e} rivolta la sua fedelt\`{a}.
 Il suo lavoro richiede di mantenere contatti con le trib\`{u} native dell'isola, dentro e fuori i confini imperiali.
@@ -124,7 +132,7 @@ Si mormora che sia un druido in incognito.
 }
 
 
-\npc{Il Musico Bicentenario}{
+\npc{\musico}{
 \dvstat{6}
 {De Bello, De Scientia}
 {Punti Vita, De Natura, De Corpore}
@@ -150,7 +158,7 @@ La sua musica ha davvero un effetto sulla Parva Gens, ma lui sembra non avere be
 }
 
 
-\npc{Sp\`{o}g Nan Sionnach}{
+\npc{\spog}{
 \dvstat{10}
 {De Bello, Sensibilitas}
 {De Scientia, De Corpore, De Societate, Punti Vita}
@@ -170,7 +178,7 @@ Non \`{e} amico di Roma, ma vede l'impero come ultima risorsa per fermare l'avve
 }
 
 
-\npc{Cluas a' Ge\`{a}rra}{
+\npc{\cluas}{
 \dvstat{8}
 {De Bello, Sensibilitas}
 {De Natura, De Scientia (Storia), De Corpore, Punti Vita}
@@ -187,7 +195,9 @@ Si alle\`{o} con Sp\`{o}g per combattere contro l'arcivate corrotto da Balor ma 
 Conosce a memoria le antiche leggende di tutta la Britannia e di buona parte di Hibernia.
 }
 
-\npc{Georgius Mar Mathan}{
+\eject
+
+\npc{\geordie}{
 \dvstat{8}
 {Ratio, De Scientia, De Magia}
 {De Bello, De Societate, Punti Vita}
@@ -212,7 +222,7 @@ Non segu\`{i} la Legio IX nella battaglia in cui scomparve. Per la disfatta ripo
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Fatti antecedenti}
+\lapart{Fatti antecedenti}
 Nell'anno 873 aUc, l'Arcivate di Britannia ed Hibernia guid\`{o} una rivolta contro Roma.
 Nel tentativo di sopraffare la superiorit\`{a} militare dell'Impero, egli speriment\`{o} una combinazione di magia druidica, culto di Agrona\footnote{Vedi manuale Britannia~\cite{britannia_en} a pagina 106.}, e culti fomoriani meno conosciuti.
 In particolare, venne corrotto dal culto del dio fomoriano della distruzione Balor.\footnote{Vedi manuale Britannia~\cite{britannia_en} a pagina 109.}
@@ -232,27 +242,27 @@ Poco alla volta, gli eserciti stanno uscendo dal reame fatato.
 Le cronache ufficiali riportano meno informazioni circa la Legio IX, vedere box a pagina 17 del volume Britannia~\cite{britannia_en}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Parte I -- Fiamme di Guerra}
+\part{Fiamme di Guerra}
 
-\subsection*{Scena I\\Incaricati di Non Trovare Nulla}
+\section{Incaricati di Non Trovare Nulla}
 %
-La lettera di convocazione per l'incarico giunge da Londinium e riporta il sigillo del governatore Sextus Domitius Mircianus (Vedi manuale Britannia~\cite{britannia_en} -- pagina 25 per approfondimenti).
+La lettera di convocazione per l'incarico giunge da Londinium e riporta il sigillo del governatore \npcref{\governatore} (Vedi manuale Britannia~\cite{britannia_en} -- pagina 25 per approfondimenti).
 I custodes sono convocati direttamente ad Eburacum, non a Londinium.
 Questa prassi \`{e} inusuale per molte province, ma non per la Britannia.
 In questa provincia, \`{e} normale per il governatore visitare molto spesso le diverse regioni in cui la Britannia \`{e} suddivisa.
-Sextus Domitius riceve i custodes ed illustra loro il problema.
+\npcref{\governatore} riceve i custodes ed illustra loro il problema.
 
-S.D.M. -- \say{%
+\npcref{\governatore} -- \say{%
 Custodes, il limes non \`{e} mai stata l'area pi\`{u} tranquilla dell'impero e mi giungono spesso lamentele dai soldati di istanza sul Vallo o nella Britannia Ultima.
 Pare che ci siano inspiegabili eventi di sabotaggio in quel di Pons Aelium.
 Stiamo cercando di ampliare il castrum e rendere l'accampamento pi\`{u} accogliente per i soldati e le loro famiglie.
 Potrebbe essere qualche trib\`{u} di Caledoni che si oppone all'ampliamento, ma mi sembra strano: il grosso dei lavori riguarda migliorie delle strade, e nuove botteghe.
 Niente di militare
 }\\
-Ellfin Pupius -- \say{%
+\npcref{\pupius} -- \say{%
 Mircianus, forse sarebbe il caso di parlare dei presagi
 }\\
-S.D.M. -- \say{%
+\npcref{\governatore} -- \say{%
 Oh, giusto! Grazie, me ne stavo per scordare.
 Allora, un paio di settimane fa stavo per cestinare l'ennesima lettera di lamentele, quando un cattivo presagio ha rovesciato la candela e incendiato mezzo scrittoio.
 Questo mi ha fatto pensare e ho interpellato i miei assistenti, ed abbiamo richiesto la consulenza di un augure... -- sospira -- gente rara di questi tempi gli auguri!
@@ -263,14 +273,14 @@ O che hanno sbagliato a fare un capitello.
 O che la pittura era marcia e Apollo si \`{e} offeso per quello
 }
 
-S.D.M. conversa con i custodes per circa un'ora e risponde ad eventuali domande che loro possano avere.
+\npcref{\governatore} conversa con i custodes per circa un'ora e risponde ad eventuali domande che loro possano avere.
 Prima di partire per una importante occasione mondana nella Britannia Secunda, si sincera che abbiano sufficienti conoscenze della lingua e delle tradizioni locali.
-Dovessero i custodes chiedere ulteriore assistenza, SDM lascia uno dei suoi assistenti in compagnia dei custodes: Ellfin Pupius.
+Dovessero i custodes chiedere ulteriore assistenza, SDM lascia uno dei suoi assistenti in compagnia dei custodes: \npcref{\pupius}.
 
 
-\subsection*{Scena II\\Gatti, Pecore, e Torbiere}
+\section{Gatti, Pecore, e Torbiere}
 %
-\monster{Minio Matholwch}{
+\monster{\minio}{
 \dvstat{6}
 {Danno, De Bello, Ratio}
 {De Corpore, Sensibilitas, Punti Vita}
@@ -281,10 +291,10 @@ Dovessero i custodes chiedere ulteriore assistenza, SDM lascia uno dei suoi assi
 Questo fatuo ha scelto di dimorare nella locanda di Pons Aelium e la protegge con la sua magia finch\'{e} vi risiede.
 Occasionalmente vaga per villaggi vicini sotto forma di gatto selvatico.
 Torna sempre alla taverna dove sa di trovare una porzione di zuppa di pane e un boccale di birra lasciate da un vecchio servitore con il potere dei \emph{Tint\`{i}nni}.
-Quando il servitore non \`{e} di turno, o per qualunque motivo non lascia doni, Minio lancia uno dei suoi dispetti sugli avventori.
+Quando il servitore non \`{e} di turno, o per qualunque motivo non lascia doni, \monsterref{\minio} lancia uno dei suoi dispetti sugli avventori.
 Il suo dispetto preferito \`{e} far marcire la birra appena spillata nei boccali.
 
-Minio appartiene alla razza Br\`{u}nei dei fatui clari. Vedi manuale Britannia~\cite{britannia_en} a pagina 178.
+\monsterref{minio} appartiene alla razza Br\`{u}nei dei fatui clari. Vedi manuale Britannia~\cite{britannia_en} a pagina 178.
 
 Vedi manuale Britannia~\cite{britannia_en} a pagina 125 per i fatui clari; a pagina 164 per i Tint\`{i}nni.
 }
@@ -295,10 +305,10 @@ Lungo la via, ville e locande gestite da romani avranno problemi di birra inspie
 Occasionalmente, i custodes pi\`{u} attenti (\tiro{Sensibilitas}{9}) noteranno altre piccole cose fuori posto in queste locande.
 %
 Un custos eccezionalmente attento (\tiro{Sensibilitas}{12}) avr\`{a} una sensazione di qualcosa di magico nel locale e pu\`{o} accorgersi di un grosso gatto selvatico che sonnecchia in un angolo o sopra una trave, accanto ad uno o due altri gatti domestici.
-Si tratta di Minio Matholwch.
-Non sar\`{a} possibile catturare Minio in alcun modo prima dell'arrivo a Pons Aelius.
+Si tratta di \monsterref{\minio}.
+Non sar\`{a} possibile catturare \monsterref{\minio} in alcun modo prima dell'arrivo a Pons Aelius.
 
-Se decidono di fermarsi in una locanda, i custodes incontrano il Musico Bicentenario, il quale riscuote discreto successo tra gli avventori. Quando si accorge della presenza di legionari, il musico cerca di evitare di attirare l'attenzione su di s\'{e} e canta solo in lingua celtica.
+Se decidono di fermarsi in una locanda, i custodes incontrano \npcref{\musico}, il quale riscuote discreto successo tra gli avventori. Quando si accorge della presenza di legionari, \npcref{\musico} cerca di evitare di attirare l'attenzione su di s\'{e} e canta solo in lingua celtica.
 
 \monster{Cadaver Turbari}{
 \dvstat{6}
@@ -323,7 +333,7 @@ Nel caso in cui andranno ad aiutarlo, si troveranno a combattere contro dei cada
 Compare un cadaver per ogni 2 custos nel contubernium (arrotondare per eccesso).
 Nel caso in cui si rifiuteranno, i cadavera mieteranno altre vittime e il rapporto salir\`{a} a 1:1 quando, poche ore dopo, attaccheranno il contubernium in una imboscata.
 
-\subsection*{Scena III\\Arrivo a Pons Aelius}
+\section{Arrivo a Pons Aelius}
 %
 Pons Aelius \`{e} un castrum militare fortificato sulla riva settentrionale del fiume Tinea\footnote{Talvolta riportato sulle mappe come Vedra. Toponimo moderno: Tyne} e per molti anni ha servito da limite orientale del Vallo di Adriano.
 Oggi il vallo prosegue per ulteriori 5 miglia verso oriente, anche se gi\`{a} da Pons Aelius il Tinea \`{e} largo a sufficienza da costituire una buona linea difensiva.
@@ -358,7 +368,7 @@ Nel cacciare via il servitore, la frutta cade a terra.
 }
 
 
-\subsection*{Scena IV\\Le Miniere}
+\section{Le Miniere}
 %
 Ci sono tre miniere, di cui una chiusa di recente e due abbandonate da molto tempo.
 La prima miniera, dislocata a sud-ovest del castrum dista circa 5 miglia e veniva usata per estrarre carbone.
@@ -385,7 +395,7 @@ La stanza del rituale contiene delle ghiande magiche disposte a cerchio.
 Dei crolli dovuti ai lavori per stabilire le fondamenta del tempio sopa la collina hanno leggermente alterato la geometria delle ghiande e incrinato l'efficacia del rituale.
 \`{E} solo questione di tempo prima che l'effetto del rituale svanisca.
 
-\subsection*{Scena V\\Castrum e villaggio}
+\section{Castrum e villaggio}
 %
 Il castrum di Pons Aelium \`{e} molto ben sviluppato, al punto da aver saturato la maggior parte dello spazio per edifici civili all'interno delle mura.
 Per questo motivo, un villaggio si sta sviluppando a sud del ponte, verso la collina.
@@ -413,7 +423,7 @@ Marte vuole vedere la fine della battaglia sulla collina.
 \\
 \hline
 Boccali di birra vanno a male &
-Minio si arrabbia quando non gli viene lasciata una offerta e diventa dispettoso.
+\monsterref{\minio} si arrabbia quando non gli viene lasciata una offerta e diventa dispettoso.
 Succede ogni volta che il vecchio servitore brigante ha il turno libero, poich\'{e} questi \`{e} l'unico a lasciare le offerte secondo tradizione celtica.
 \\
 \hline
@@ -433,27 +443,27 @@ Un \tiro{De Societate}{9} riveler\`{a} ai custodes che gli abitanti sono solleva
 Un \tiro{De Societate}{6} sar\`{a} sufficiente a scoprire che poco prima degli incendi sono stati avvistati mostri infuocati vagare per il villaggio.
 Questi avvistamenti non sono mai stati confermati e nessuno ufficialmente d\`{a} credito queste voci come attendibili, ma ultimamente anche i legionari hanno iniziato a mormorare qualcosa di simile.
 
-Un \tiro{De Societate}{3} far\`{a} notare ai custodes che la maggior parte della popolazione brigante locale apprezza ed elogia le gesta di Georgius nel villaggio: chi lo definisce il miglior panettiere, chi un ottimo macellaio, un fabbro affidabile, e perfino un pescatore molto generoso. Per capire o avere la conferma che non si tratti della stessa persona ma bens\`{i} di un nome molto comune, serve un \tiro{Ingenium}{6}.
+Un \tiro{De Societate}{3} far\`{a} notare ai custodes che la maggior parte della popolazione brigante locale apprezza ed elogia le gesta di \npcref{\geordie} nel villaggio: chi lo definisce il miglior panettiere, chi un ottimo macellaio, un fabbro affidabile, e perfino un pescatore molto generoso. Per capire o avere la conferma che non si tratti della stessa persona ma bens\`{i} di un nome molto comune, serve un \tiro{Ingenium}{6}.
 
 La taverna \`{e} il punto di incontro preferito di soldati e lavoratori. La taverna ospita anche un fatuo claro travestito da gatto selvatico a cui piace fare dispetti se non dovesse ricevere la sua offerta quotidiana di birra e zuppa di pesce.
 
 Nessuno ha mai costruito sulla cima di questa collina prima d'ora a causa di improvvisi ed inspiegabili smottamenti, terremoti, e alluvioni che hanno distrutto solo gli edifici pi\`{u} elevati.
 
 Dentro e fuori il castrum, i legionari sono nervosi.
-Stanno costruendo un patibolo per eseguire la sentenza di condanna di Georius Mar Mathan.
+Stanno costruendo un patibolo per eseguire la sentenza di condanna di \npcref{\geordie}.
 Nonostante la condanna sia stata proclamata nel pieno rispetto di Minerva, le trib\`{u} locali sono convinte che questo sia un insulto mirato a danneggiare la linea di successione di una importante trib\`{u}.
 Nei pressi del ponte, una giovane donna piange.
 Si tratta di \emph{Cartimandua Lunet}, figlia di un importante capo trib\`{u} dei briganti.
-Se interpellata, domanda ai custodes di intercedere per salvare Georgius, il suo promesso sposo.
+Se interpellata, domanda ai custodes di intercedere per salvare \npcref{\geordie}, il suo promesso sposo.
 
-\subsection*{Scena VI\\Gabbia di Morte}
+\section{Gabbia di Morte}
 %
-L'esecuzione di Georgius \`{e} prevista per il secondo giorno successivo all'arrivo dei custodes.
-Durante la notte, le fiaccole della trib\`{u} di Georgius si possono vedere in un accampamento a sud delle mura.
+L'esecuzione di \npcref{\geordie} \`{e} prevista per il secondo giorno successivo all'arrivo dei custodes.
+Durante la notte, le fiaccole della trib\`{u} di \npcref{\geordie} si possono vedere in un accampamento a sud delle mura.
 Una delegazione di ambasciatori briganti sta presidiando la collina.
 Non serve molto a capire che hanno intenzioni poco diplomatiche e sono tutti ben armati.
 %
-Sulla collina il patibolo \`{e} pronto per l'impiccagione, mentre Georgius aspetta in una cella del castrum.
+Sulla collina il patibolo \`{e} pronto per l'impiccagione, mentre \npcref{\geordie} aspetta in una cella del castrum.
 
 Durante la seconda notte, lontane urla svegliano il contubernium.
 Una tenda dell'accampamento sta andando a fuoco.
@@ -484,12 +494,12 @@ Qualora tentassero di ingaggiare in mischia, malcapitati passanti o ausiliari in
 Il gigante muove solo pochi passi prima di accasciarsi a terra, ormai lontano dallo sguardo del druido che lo controlla, e lentamente soccombe all'incendio che ne divora il corpo.
 Sembra che all'interno dei giunchi ci sia qualcosa, ma non si capisce bene cosa.
 
-L'incendio distrugge il patibolo dove l'esecuzione di Georgius sarebbe dovuta avvenire e i custodes saranno chiamati a prioritizzare le indagini o l'esecuzione di un condannato politicamente scomodo.
+L'incendio distrugge il patibolo dove l'esecuzione di \npcref{\geordie} sarebbe dovuta avvenire e i custodes saranno chiamati a prioritizzare le indagini o l'esecuzione di un condannato politicamente scomodo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Parte II -- Eco dal Passato}
+\part{Eco dal Passato}
 %
-\subsection*{Scena VII\\Ritrovamenti}
+\section{Ritrovamenti}
 
 Sul campo di battaglia vengono rinvenuti i corpi di tre legionari romani.
 Uno di loro \`{e} gi\`{a} morto. Per gli altri due servir\`{a} un intervento immediato per curare le loro ferite per salvargli la vita (\tiro{De Scientia (Medicina)}{6}).
@@ -524,7 +534,7 @@ Successive spedizioni di ricerca non trovarono cadaveri n\`{e} tracce di battagl
 Se portato sul campo di battaglia, esso conferisce ai legionari sotto la sua ombra grandi poteri di combattimento.
 
 
-\subsection*{Scena IX\\Presagi Funesti}
+\section{Presagi Funesti}
 %
 Nelle ore che seguono, piccole scosse di terremoto si susseguono.
 Corvi volano il cerchio in cima alla collina.
@@ -544,7 +554,7 @@ Molti sono caduti in trappole tese dai druidi, i quali hanno sacrificato prigion
 Loro si sono lanciati all'assalto di uno di questi giganti seguendo l'aquila della legione.
 Sono riusciti ad incendiarlo ma non ad abbatterlo (\`{e} stato consumato dalle fiamme mentre loro erano svenuti).
 
-\monster{Vate}{
+\monster{\vate}{
 \dvstat{6}
 {De Corpore, Sensibilitas}
 {De Bello, De Natura, De Societate, Punti Vita}
@@ -559,23 +569,24 @@ La legio IX raramente aveva affrontato un esercito cos\`{i} numeroso, ma il prob
 Riferiranno di avere visto ancora \textbf{1:1} giganti che ancora combattono contro i legionari.
 Ciascuno di questi \`{e} controllato a vista da un vate.
 
-\subsection*{Scena X\\Musica di Altri Tempi}
+\section{Musica di Altri Tempi}
 %
-Il musico bicentenario passa per caso dalla taverna del villaggio, fa il suo spettacolo, ma quando capisce che qualcosa di funesto sta per accadere, decide di lasciare Pons Aelium in cerca di locande meno pericolose.
+\npcref{\musico} passa per caso dalla taverna del villaggio, fa il suo spettacolo, ma quando capisce che qualcosa di funesto sta per accadere, decide di lasciare Pons Aelium in cerca di locande meno pericolose.
 I custodes possono provare a fermarlo, ma dovranno essere molto convincenti (\tiro{De Societate}{9} oppure tramite 5 successi in una Udienza a difficolt\`{a} 6).
 Se i custodes lo arrestano o lo minacciano, egli non oppone resistenza, ma si rifiuter\`{a} di aiutare Roma in qualunque modo.
 
-Nel caso in cui non sia gi\`{a} stato introdotto al seguito del contubernium, Ellfin Pupius raggiunge i custodes per chiedere aggiornamenti riguardo le loro indagini e offrir\`{a} collaborazione per indagare.
+Nel caso in cui non sia gi\`{a} stato introdotto al seguito del contubernium, \npcref{\pupius} raggiunge i custodes per chiedere aggiornamenti riguardo le loro indagini e offrir\`{a} collaborazione per indagare.
 
-Dopo essersi ripreso dalle ferite in un nascondiglio segreto poco lontano, l'antico arcibardo Cluas a' Ge\`{a}rra si fa trovare da Pupius e chiede un incontro coi custodes.
-Cluas non parla bene latino, e chiede l'intervento di Pupius come interprete.
-Cluas si accinge a guidare i custodes verso il luogo dove il rituale per manipolare lo spazio-tempo venne officiato, nella miniera di antimonio.
+
+Dopo essersi ripreso dalle ferite in un nascondiglio segreto poco lontano, l'antico arcibardo \npcref{\cluas} si fa trovare da \npcref{\pupius} e chiede un incontro coi custodes.
+Lui non parla bene latino, e chiede l'intervento di \npcref{\pupius} come interprete.
+\npcref{\cluas} si accinge a guidare i custodes verso il luogo dove il rituale per manipolare lo spazio-tempo venne officiato, nella miniera di antimonio.
 Tuttavia, negli anni i tunnel sono crollati e ora servono dai 3 ai 5 giorni di lavoro per riaprire il passaggio.
 
 Brevi indagini sul sito rivelano che i lavori di livellamento del terreno in cima alla collina hanno causato smottamenti nelle miniere che hanno disturbato il rituale druidico.
 
-Cluas racconta di non essere stato lui ad officiare il rituale, bens\`{i} Sp\`{o}g Nan Sionnach, il quale si trova ancora nel reame fatato.
-Solo Sp\`{o}g \`{e} capace di una magia cos\`{i} potente, mentre Cluas pu\`{o} al massimo prolungare di alcune ore o al massimo dei giorno l'effetto della magia.
+\npcref{\cluas} racconta di non essere stato lui ad officiare il rituale, bens\`{i} \npcref{\spog}, il quale si trova ancora nel reame fatato.
+Solo Sp\`{o}g \`{e} capace di una magia cos\`{i} potente, mentre \npcref{\cluas} pu\`{o} al massimo prolungare di alcune ore o al massimo dei giorno l'effetto della magia.
 Questa azione richiede di trovare, e posizionare nella miniera altre ghiande magiche.
 Al contrario, se i custodes lo desiderano, l'arcibardo \`{e} in grado di terminare la magia immediatamente e riportare legionari, barbari, e scirpex nel mondo attuale.
 
@@ -591,9 +602,9 @@ I loro effetti si possono leggere nella Tabella a pagina 118 del manuale Britann
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Parte III -- La Battaglia pi\`{u} Lunga}
+\part{La Battaglia pi\`{u} Lunga}
 %
-\subsection*{Scena XI\\Vecchi Nemici}
+\section{Vecchi Nemici}
 %
 Le voci corrono in fretta e -- non si sa come -- hanno raggiunto anche altre trib\`{u} oltre il Vallo.
 Un esercito di fanatici dormienti di Balor attacca il Segedunum, un forte a est di Pons Aelium, mentre un manipolo di questi prova ad aggirare il Vallo via fiume.
@@ -621,7 +632,7 @@ Gli attaccanti sono in numero \textbf{1:1} pitti fanatici + 1 vate.
 Nel caso in cui i custodes portino rinforzi, \textbf{1:2} fanatici (un fanatico ogni ausiliari di rinforzo) possono bilanciare lo scontro.
 Non \`{e} comunque possibile richiedere l'aiuto di pi\`{u} di 3 ausiliari per non lasciare sguarnito il castrum.
 
-\subsection*{Scena XII\\Il Giuramento}
+\section{Il Giuramento}
 %
 Al termine dello scontro, i custodes avvertono la sensazione di pericolo sempre pi\`{u} imminente.
 Omen e presagi di catastrofi in avvicinamento si moltiplicano.
@@ -715,7 +726,7 @@ In caso di fallimento, i bonus si manifesteranno alla prima azione rilevante.
 \end{description}
 
 
-\subsection*{Scena XIII\\Un Impiccato in Sospeso}
+\section{Un Impiccato in Sospeso}
 %
 \monster{Delegato Brigante}{
 \dvstat{6}
@@ -726,26 +737,26 @@ In caso di fallimento, i bonus si manifesteranno alla prima azione rilevante.
 \equip{Lancia (Danno 6), Spada Celtica (Danno 8), Arco (Danno 6)}{Clipeus (Parata +2)}
 }
 
-Prima di avviarsi verso la collina per interrompere la magia druidica, i custodes saranno chiamati a pronunciarsi sul destino di Georgius ancora tenuto in custodia.
-La delegazione di briganti sollecita il rilascio di Georgius.
+Prima di avviarsi verso la collina per interrompere la magia druidica, i custodes saranno chiamati a pronunciarsi sul destino di \npcref{\geordie} ancora tenuto in custodia.
+La delegazione di briganti sollecita il rilascio di \npcref{\geordie}.
 Hanno la sensazione che il castrum abbia meno legionari di guardia del solito e potrebbero organizzare un assalto per liberare il giovane.
 
-I custodes possono negoziare con i briganti per il rilascio di Georgius.
+I custodes possono negoziare con i briganti per il rilascio di \npcref{\geordie}.
 Un \tiro{De Societate (Negoziare)}{6} porta i seguenti risultati.
-Il grado di difficolt\`{a} scende a 3 se i custodes portano dei doni o si offrono di intercedere per liberare Georgius.
+Il grado di difficolt\`{a} scende a 3 se i custodes portano dei doni o si offrono di intercedere per liberare \npcref{\geordie}.
 
 \emph{I grado di successo}:\\
-I briganti non assaltano il forte e si ritirano immediatamente con Georgius.
+I briganti non assaltano il forte e si ritirano immediatamente con \npcref{\geordie}.
 
 \emph{II grado di successo}:\\
-I briganti ripagano i danni causati da Georgius e porgono scuse ufficiali.
+I briganti ripagano i danni causati da \npcref{\geordie} e porgono scuse ufficiali.
 
 \emph{III grado di successo}:\\
-I briganti forniranno aiuto militare ai custodes per difendere il Vallo nei giorni a seguire in cambio della libert\`{a} di Georgius.
+I briganti forniranno aiuto militare ai custodes per difendere il Vallo nei giorni a seguire in cambio della libert\`{a} di \npcref{\geordie}.
 
 Se i negoziati falliscono o i custodes non si accordano a questi termini, ci sono \textbf{2:1} guerrieri briganti che -- forti della superiorit\`{a} numerica rispetto ai custodes -- sono pronti a fare irruzione nel castrum.
 
-\subsection*{Scena XIV\\Magia Fomoriana}
+\section{Magia Fomoriana}
 %
 Dopo giorni di estenuanti lavori, i tunnel per accedere alla vecchia miniera di stibium sono stati liberati.
 L'arcibardo \`{e} pronto a mantenere il rituale in modo pi\`{u} stabile o interromperlo definitivamente, seguendo le indicazioni dei custodes.
@@ -813,7 +824,7 @@ L'emissario di Balor \`{e} uno scirpex ottenuto sacrificando 50 legionari romani
 
 I custodes hanno 5 tempora per agire prima della comparsa delle dee Alaisiagae.
 
-\subsection*{Scena XV\\Un Destino Sospeso nel Tempo}
+\section{Un Destino Sospeso nel Tempo}
 %
 Quattro carri da guerra appaiono sulla collina.
 Ciascuno di essi \`{e} trainato da una fanciulla.
@@ -835,7 +846,7 @@ Per arrivare in corpo a corpo con l'arcivate, i custodes devono ingaggiare un co
 Alla morte di tutti i vates e dell'Arcivate, la Legio IX Hispana riesce a respingere i ribelli nel giro di poche decine di minuti.
 Quest'oggi i canti di vittoria saranno in latino.
 
-\section*{Conclusione}
+\lasection{Conclusione}
 %
 L'arcidruido viene trovato senza vita alla fine della battaglia.
 Il suo amico arcibardo gli rende onore e vi chiede il permesso di allestire una pira secondo tradizione celtica.
@@ -851,15 +862,15 @@ Nonostante le perdite, ora la Britannia si ritrova con un enorme surplus di pers
 Una volta terminata la reintegrazione dei veterani nella societ\`{a} moderna, Roma avr\`{a} le forze necessarie per tornare ad occupare il Vallo Antonino o perfino per completare la conquista dell'isola.
 L'imperatore sapr\`{a} decidere con saggezza.
 
-\subsection*{Punti Esperienza}
+\lasection{Punti Esperienza}
 \begin{description}
 \item[+6] Valore base
 \item[+1] I custodes risolvono il mistero della birra marcia
-\item[+1] I custodes intercedono per evitare l'impiccagione di Georgius
+\item[+1] I custodes intercedono per evitare l'impiccagione di \npcref{\geordie}
 \item[+2] I custodes restaurano e portano in battaglia il vessillo della Legio IX, ristabilendo il suo onore
 \end{description}
 
-\section*{Riconoscimenti}
+\lasection{Riconoscimenti}
 Le immagini sono state tutte generate automaticamente tramite \emph{AI Image Generator} disponibile da \url{deepai.org}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
